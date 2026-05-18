@@ -1,158 +1,96 @@
-# 🌐 SkyTeams Web Internship 
+# 🌐 Habit Tracker Service & Algorithm Lab
 
-This repository showcases my work during the **SkyTeams Web Internship**, combining **algorithm practice**, **data structure implementations**, and a real-world project — a **Habit Tracker application**.  
-The aim is to strengthen skills in **backend development, frontend development, and computer science fundamentals**.
+A professional-grade backend service built with **FastAPI** and **MongoDB**, integrated with a curated collection of **Data Structures** and **Algorithm** implementations. This project demonstrates clean code principles, automated testing, and modular software architecture.
 
 ---
 
 ## 📑 Table of Contents
-- [Repository Structure](#repository-structure)
-- [Algorithms & Data Structures](#algorithms--data-structures)
-- [Tests](#tests)
-- [Habit Tracker Project](#habit-tracker-project)
-- [Technologies Used](#technologies-used)
-- [Goals](#goals)
-- [Future Improvements](#future-improvements)
-- [Author](#author)
+- [Project Overview](#-project-overview)
+- [System Architecture](#-system-architecture)
+- [CS Fundamentals Lab](#-cs-fundamentals-lab)
+- [Getting Started](#-getting-started)
+- [Testing](#-testing)
+- [Roadmap](#-roadmap)
+- [Author](#-author)
 
 ---
 
-## 🏗 Repository Structure
-```
-SkyTeams-Web-Internship-2025-NasirAhmadEhsan
-│
-├── habit-tracker/
-│   ├── backend/
-│   │   ├── app/
-│   │   ├── fastapi_offline_docs/
-│   │   └── requirements.txt
-│   └── frontend/
-│
-├── data_structure_algorithm/
-│   ├── algorithm/
-│   │   ├── week1/
-│   │   ├── week2/
-│   │   ├── week3/
-│   │   └── week4/
-│   ├── data_structure/
-│   │   ├── week5/
-│   │   └── week6/
-│   └── tests/
-│       ├── algorithm/
-│       └── data_structure/
-│
-├── LICENSE
-└── README.md
+## 📊 Project Overview
+The **Habit Tracker** is a modular web application designed to manage and visualize daily habits. It uses an asynchronous API-first approach to ensure high performance and scalability.
+
+### Core Backend Features:
+*   **Asynchronous API:** Built with FastAPI for high-speed request handling.
+*   **ODM Integration:** Utilizing Beanie with MongoDB for elegant data modeling.
+*   **Modular Design:** Separated concerns between business logic, schemas, and routes.
+*   **API Documentation:** Integrated Swagger and Redoc support (including offline docs).
+
+---
+
+## 📘 CS Fundamentals Lab
+This module contains high-performance implementations of core computer science concepts, serving as a foundational library for the service's logic.
+
+### 🔹 Algorithms
+*   **Sorting & Searching:** Efficient implementations of Merge Sort, Quick Sort, and Binary Search.
+*   **Optimization:** Logic focused on reducing time and space complexity.
+
+### 🔹 Data Structures
+*   **Custom Models:** Stacks, Queues, and Linked Lists designed for specific data flows.
+*   **Trees:** Hierarchical data management and traversal algorithms.
+
+---
+
+## 🛠 Tech Stack
+*   **Backend:** Python 3.10+, FastAPI, Beanie ODM
+*   **Database:** MongoDB
+*   **Frontend:** React (Under Development)
+*   **Environment:** Linux (Fedora), Git
+*   **Quality Assurance:** Pytest
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+*   Python 3.10 or higher
+*   MongoDB installed and running
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com
+   ```
+2. Navigate to the backend directory:
+   ```bash
+   cd habit-tracker/backend
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Start the service:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
+
+---
+
+## 🧪 Testing
+The project maintains a high standard of reliability through automated unit tests.
+To run the tests:
+```bash
+pytest data_structure_algorithm/tests
 ```
 
 ---
 
-## 📘 Algorithms & Data Structures
-
-This section contains weekly exercises and implementations to practice **algorithmic thinking** and **data structure design**.
-
-### 🔹 Algorithm Topics
-- Sorting (bubble, merge, quicksort)
-- Searching (linear, binary)
-- Basic problem solving
-
-**Structure:**
-```
-data_structure_algorithm/algorithm
-├── week1
-├── week2
-├── week3
-└── week4
-```
-
-
-### 🔹 Data Structure Topics
-- Arrays & Lists
-- Stacks & Queues
-- Trees
-
-**Structure:**
-```
-data_structure_algorithm/data_structure
-├── week5
-└── week6
-```
-
----
-
-## 🧪 Tests
-
-Unit tests validate algorithm and data structure implementations:
-
-```
-data_structure_algorithm/tests
-├── algorithm
-└── data_structure
-```
-
-These ensure correctness and reliability of the solutions.
-
----
-
-## 📊 Habit Tracker Project
-
-A **habit tracking web application** designed with separate backend and frontend layers.
-
-### Backend
-- Framework: **FastAPI**
-- Database: **MongoDB** with **Beanie ODM**
-- Features:
-  - RESTful API endpoints
-  - Habit management logic
-  - Modular project structure
-  - Offline API documentation
-
-```
-habit-tracker/backend
-├── app
-├── fastapi_offline_docs
-└── requirements.txt
-```
-
-### Frontend
-- Framework: **React**
-- Status: Incomplete, planned for user-friendly habit tracking interface
-
-habit-tracker/frontend
-
----
-
-## 🛠 Technologies Used
-- Python
-- FastAPI
-- MongoDB + Beanie ODM
-- React
-- Git & GitHub
-- Linux (Fedora)
-
----
-
-## 🎯 Goals
-- [x] Strengthen programming fundamentals  
-- [x] Practice algorithms and data structures  
-- [ ] Build a complete backend with FastAPI + MongoDB  
-- [ ] Implement a functional frontend with React  
-- [ ] Write clean, maintainable, and testable code  
-
----
-
-## 🔮 Future Improvements
-- Complete frontend implementation  
-- Enhance backend with full database integration  
-- Improve API design and documentation  
-- Add more algorithmic challenges  
-- Expand test coverage for reliability  
+## 🔮 Roadmap
+- [ ] Implement JWT-based User Authentication.
+- [ ] Complete the React-based dashboard.
+- [ ] Add data export features (CSV/JSON).
+- [ ] Integrate AI-based habit suggestions.
 
 ---
 
 ## 👨‍💻 Author
 **Nasir Ahmad Ehsan**  
-
-**Interests:**
-- Backend Development  
-- Artificial Intelligence   
+*Backend Developer & AI Enthusiast*
